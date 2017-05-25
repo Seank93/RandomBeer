@@ -15,16 +15,15 @@
         android:id="@+id/textView_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="177dp"
         android:text="TextView"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/imageView_Label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp" />
 
     <TextView
         android:id="@+id/textView_Desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
@@ -34,11 +33,22 @@
         android:text="TextView" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView_Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView_Title"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="121dp"
-        app:srcCompat="@android:drawable/btn_star_big_off" />
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/Btn_nextBeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:text="Button"
+        android:onClick="reloadABeer"/>
+
 </RelativeLayout>

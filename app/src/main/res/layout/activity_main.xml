@@ -19,9 +19,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:alpha=".3"
+        android:alpha=".2"
         android:scaleType="fitXY"
-        app:srcCompat="@android:drawable/btn_star_big_off" />
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        tools:alpha=".2" />
 
     <TextView
         android:id="@+id/textView_Title"
@@ -31,7 +32,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:letterSpacing=".3"
-        android:text="TextView"
+        android:text="..."
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@android:color/background_dark"
@@ -55,9 +56,10 @@
         android:lineSpacingMultiplier="1.2"
         android:maxLines="15"
         android:scrollbars="vertical"
-        android:text="TextView"
+        android:text="..."
         android:textColor="@android:color/background_dark"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        tools:textStyle="bold" />
 
 
     <Button
@@ -65,10 +67,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="103dp"
         android:onClick="reloadABeer"
-        android:text="Next Beer" />
+        android:text="Next Beer"
+        android:layout_toRightOf="@+id/Btn_viewImage"
+        android:layout_toEndOf="@+id/Btn_viewImage" />
 
 
     <ImageView
@@ -79,5 +82,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp"
         app:srcCompat="@drawable/brewdb" />
+
+    <Button
+        android:id="@+id/Btn_viewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView_Label"
+        android:text="View Image" />
 
 </RelativeLayout>
